@@ -8,7 +8,6 @@ import city_shape_options from "../constants/city_shape";
 import distance from '../assets/icon/distance.svg'
 
 function RouteSelecton({ lane, data,clickHandle }) {
-    console.log('data', lane)
     return (
         <div className={` list-item w-full h-28 ${lane["RouteName"] === data["RouteName"] ? "bg-gray-200" : "bg-white"}`} 
         onClick={()=>clickHandle(data)}>
