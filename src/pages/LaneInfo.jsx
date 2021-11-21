@@ -36,7 +36,7 @@ export default function LaneInfo() {
                 隸屬於：{lane["AuthorityName"]}
             </p>
             <p className="lane-info-distance mt-8 mb-3">
-                總長度：{lane["CyclingLength"] / 1000} km
+                總長度：{lane["CyclingLength"] ? lane["CyclingLength"] / 1000 : '?'} km
             </p>
             <section className="lane-info-section mt-28 mb-5">路線規劃</section>
             <div className="relative lane-info-map">
