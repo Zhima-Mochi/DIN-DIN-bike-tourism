@@ -11,7 +11,7 @@ import distance from '../assets/icon/distance.svg'
 import { Link } from 'react-router-dom';
 import DEBUG from '../constants/debug';
 
-const inspiration_image=[
+const inspiration_image = [
     index_inspiration_1,
     index_inspiration_2,
     index_inspiration_3,
@@ -19,23 +19,23 @@ const inspiration_image=[
     index_inspiration_5,
     index_inspiration_6,
 ]
-function Route({ data,ind }) {
+function Route({ data, ind }) {
     DEBUG && console.log(data);
     return (
         <Link to={`/lane_info/${data.RouteName}`}>
-        <div className=" recommend-route-box">
-            <div className="grid grid-cols-2 ">
-                <div className="col-span-1 mr-4 ">
-                    <img className="recommend-route-img" src={inspiration_image[ind]}/>
-                </div>
-                <div className="col-span-1 recommend-route-content ">
-                    <p className="city mb-1">{data.City}</p>
-                    <p className="route-name mb-1">{data.RouteName}</p>
-                    <img src={distance} className="distance-icon mr-1"/> 
-                    <span className="distance">{data.CyclingLength/1000}km</span>
+            <div className=" recommend-route-box">
+                <div className="grid grid-cols-2 ">
+                    <div className="col-span-1 mr-4 ">
+                        <img className="recommend-route-img" src={inspiration_image[ind]} />
+                    </div>
+                    <div className="col-span-1 recommend-route-content ">
+                        <p className="city mb-1">{data.City}</p>
+                        <p className="route-name mb-1">{data.RouteName}</p>
+                        <img src={distance} className="distance-icon mr-1" />
+                        <span className="distance">{data.CyclingLength ? data.CyclingLength / 1000 : '?'}km</span>
+                    </div>
                 </div>
             </div>
-        </div>
         </Link>
     )
 }
@@ -46,15 +46,15 @@ export default function Inspiration() {
             <IntroTitle title_1="Looking for Inspiration" title_2="推薦單車路線" />
             <div className="flex  lg:justify-between items-center flex-col lg:flex-row">
                 {
-                    allShapeData.slice(0, 3).map((item,ind) => {
+                    allShapeData.slice(0, 3).map((item, ind) => {
                         return <Route key={ind} ind={ind} data={item} />
                     })
                 }
             </div>
             <div className="flex  lg:justify-between items-center flex-col lg:flex-row">
                 {
-                    allShapeData.slice(3, 6).map((item,ind) => {
-                        return <Route key={ind} ind={ind+3} data={item} />
+                    allShapeData.slice(3, 6).map((item, ind) => {
+                        return <Route key={ind} ind={ind + 3} data={item} />
                     })
                 }
             </div>

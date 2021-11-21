@@ -13,7 +13,7 @@ function RouteSelecton({ lane, data, clickHandle }) {
             onClick={() => clickHandle(data)}>
             <span className="city">{data.City}</span><br />
             <p className="route-name mb-8">{data.RouteName}</p>
-            <span className="distance"> 距離 {data.CyclingLength / 1000} km</span>
+            <span className="distance"> 距離 {data.CyclingLength ? data.CyclingLength / 1000 : '?'} km</span>
             <Link to={`/lane_info/${data.RouteName}`}><span className="float-right mr-2 more">查看更多</span></Link>
         </div>
     )
