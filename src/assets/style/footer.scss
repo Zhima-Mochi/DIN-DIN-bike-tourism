@@ -1,0 +1,23 @@
+.footer-bg {
+    width: 100%;
+    background-color: $black;
+    height: 317px;
+
+    @include lg-width {
+        height: 159px;
+    }
+}
+
+.footer-copyright {
+    color: white;
+    font-family: Noto Sans TC;
+    font-style: normal;
+
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: 0.1em;
+
+}

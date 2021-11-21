@@ -1,0 +1,86 @@
+$orange: #F6A21A;
+$green: #51AB5B;
+$black: #1F1E1D;
+
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.leaflet-marker-icon {
+    border-radius: 50%;
+    padding: 0.4rem;
+    color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+    &.borrow {
+        background-color: $orange;
+    }
+
+    &.return {
+        background-color: $black;
+        /* filter: invert(67%) sepia(70%) saturate(1468%) hue-rotate(349deg) brightness(101%) contrast(93%); */
+    }
+
+    &.route {
+        background-color: $green;
+    }
+
+}
+
+.near-bike-map {
+    height: 400px;
+
+    @include lg-width {
+        height: 674px;
+    }
+}
+
+.popup-content {
+    z-index: 20;
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    background-color: white;
+    color: black;
+    letter-spacing: 0.1em;
+
+    .normal-serv {
+        padding: 2px;
+        font-size: 8px;
+        line-height: 12px;
+        background-color: $green;
+        color: white;
+    }
+
+    .no-serv {
+        padding: 2px;
+        font-size: 8px;
+        line-height: 12px;
+        background-color: red;
+    }
+
+    .title {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .road {
+        font-size: 13px;
+        line-height: 19px;
+        color: #AAAAAA;
+    }
+
+    .type {
+        font-family: Overpass;
+        font-size: 6px;
+        line-height: 8px;
+        color: black;
+    }
+
+    .bike-number {
+        font-size: 13px;
+        line-height: 19px;
+    }
+}

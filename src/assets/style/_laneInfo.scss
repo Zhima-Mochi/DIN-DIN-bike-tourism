@@ -1,0 +1,50 @@
+.lane-info-title {
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    letter-spacing: 0.05em;
+    color: black;
+}
+
+.lane-info-subtitle {
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #828282;
+}
+
+.lane-info-section {
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding-left: 16px;
+    border-left: 1px solid $orange
+}
+
+.lane-info-distance {
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    color: $black;
+}
+
+.lane-info-map {
+    width: 100%;
+    height: 400px;
+
+    @include lg-width {
+        height: 600px;
+    }
+}

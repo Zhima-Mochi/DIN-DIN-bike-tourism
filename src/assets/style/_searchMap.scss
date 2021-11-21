@@ -1,0 +1,75 @@
+.search-map-where {
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+}
+
+.search-map-block {
+    height: 400px;
+
+    @include lg-width {
+        height: 742px;
+    }
+
+}
+
+.search-map-map {
+    width: 100%;
+    height: 400px;
+
+    @include lg-width {
+        height: 742px;
+    }
+}
+
+.search-map-route-list {
+    overflow: auto;
+    letter-spacing: 0.03em;
+
+    .list-item {
+        margin: 8px 0px;
+        padding: 4px 8px;
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid rgb(148, 148, 148)
+        }
+    }
+
+    .city {
+        color: $green;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .route-name {
+        color: $black;
+        font-size: 16px;
+        line-height: 23px;
+        max-width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .distance {
+        font-family: Overpass;
+        color: $black;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .distance-icon {
+        display: inline;
+        filter: invert(70%) sepia(12%) saturate(5155%) hue-rotate(74deg) brightness(95%) contrast(46%);
+    }
+
+    .more {
+        color: $green;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

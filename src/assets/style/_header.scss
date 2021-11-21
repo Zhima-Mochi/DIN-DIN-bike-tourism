@@ -1,0 +1,22 @@
+$orangecolor: #F6A21A;
+
+.header-nav-btn {
+    font-family: Noto Sans TC;
+    font-weight: 400;
+    padding: 0.25rem 0.5rem;
+    letter-spacing: 0.1em;
+    &:hover {
+        border-bottom: 1px solid $orangecolor;
+        transition: 0.2s;
+    }
+}
+
+.page-title {
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    color: $black;
+}

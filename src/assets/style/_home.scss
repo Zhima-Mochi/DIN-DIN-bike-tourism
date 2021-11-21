@@ -1,0 +1,104 @@
+.banner {
+    background-image: url('../img/banner_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    min-height: 586px;
+
+    @include lg-width {
+        min-height: 740px;
+        height: 50vh;
+    }
+}
+
+.banner-up {
+    @extend .banner;
+    background-color: rgba(0, 0, 0, 0.20);
+    background-image: none;
+    padding: 0 2rem;
+
+    @include lg-width {
+        padding: 0 20vw;
+    }
+
+}
+
+$searchsize-ratio: 0.9;
+
+.search {
+    /* background-color: white; */
+    border-left: 0.3rem solid $orange;
+    color: white;
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px*$searchsize-ratio;
+    line-height: 44px*$searchsize-ratio;
+    letter-spacing: 0.05em*$searchsize-ratio;
+    padding: 0.05rem*$searchsize-ratio 1rem*$searchsize-ratio;
+
+    @include lg-width {
+        padding: 0.1rem*$searchsize-ratio 2rem*$searchsize-ratio;
+        font-size: 48px*$searchsize-ratio;
+        line-height: 56px*$searchsize-ratio;
+    }
+
+    select {
+        border: 1px solid $gray;
+        height: 35px*$searchsize-ratio;
+        color: $black;
+        font-weight: 300;
+        font-size: 20px*$searchsize-ratio;
+        line-height: 36px*$searchsize-ratio;
+        letter-spacing: 0.1em*$searchsize-ratio;
+        padding-left: 72px*$searchsize-ratio;
+
+        @include lg-width {
+            line-height: 48px*$searchsize-ratio;
+            height: 56px*$searchsize-ratio;
+            padding-left: 60px*$searchsize-ratio;
+        }
+    }
+
+    button {
+        display: inline-block;
+        border: 1px solid white;
+        height: 35px*$searchsize-ratio;
+        color: white;
+        font-weight: 300;
+        font-size: 20px*$searchsize-ratio;
+        line-height: 36px*$searchsize-ratio;
+        letter-spacing: 0.1em*$searchsize-ratio;
+        padding: 0 20px*$searchsize-ratio;
+        margin: 0;
+
+        @include lg-width {
+            line-height: 48px*$searchsize-ratio;
+            height: 56px*$searchsize-ratio;
+        }
+
+        &:hover {
+            color: $black;
+            font-weight: bold;
+            background-color: $orange;
+            transition: 1s;
+        }
+    }
+}
+
+.select-img {
+    position: absolute;
+    left: 2rem*$searchsize-ratio;
+    top: 55%;
+    transform: translate(0%, -50%);
+
+    @include lg-width {
+        left: 1.5rem*$searchsize-ratio;
+        top: 40%;
+        transform: translate(0%, -50%);
+        transform: scale(1.5);
+    }
+
+
+}
