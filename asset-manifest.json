@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "./static/css/main.6b42416a.chunk.css",
+    "main.js": "./static/js/main.347721fa.chunk.js",
+    "main.js.map": "./static/js/main.347721fa.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.bde30c42.js",
+    "runtime-main.js.map": "./static/js/runtime-main.bde30c42.js.map",
+    "static/css/2.cb28b092.chunk.css": "./static/css/2.cb28b092.chunk.css",
+    "static/js/2.cc49024e.chunk.js": "./static/js/2.cc49024e.chunk.js",
+    "static/js/2.cc49024e.chunk.js.map": "./static/js/2.cc49024e.chunk.js.map",
+    "static/js/3.a18e7555.chunk.js": "./static/js/3.a18e7555.chunk.js",
+    "static/js/3.a18e7555.chunk.js.map": "./static/js/3.a18e7555.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/2.cb28b092.chunk.css.map": "./static/css/2.cb28b092.chunk.css.map",
+    "static/css/main.6b42416a.chunk.css.map": "./static/css/main.6b42416a.chunk.css.map",
+    "static/js/2.cc49024e.chunk.js.LICENSE.txt": "./static/js/2.cc49024e.chunk.js.LICENSE.txt",
+    "static/media/arrow-forward.4f4ab3cb.svg": "./static/media/arrow-forward.4f4ab3cb.svg",
+    "static/media/all.scss": "./static/media/bike_orange.16fd6384.svg",
+    "static/media/distance.00653790.svg": "./static/media/distance.00653790.svg",
+    "static/media/index_inspiration_1.536942bd.jpg": "./static/media/index_inspiration_1.536942bd.jpg",
+    "static/media/index_inspiration_2.18eea058.jpg": "./static/media/index_inspiration_2.18eea058.jpg",
+    "static/media/index_inspiration_3.960c841a.jpg": "./static/media/index_inspiration_3.960c841a.jpg",
+    "static/media/index_inspiration_4.b558f7dd.jpg": "./static/media/index_inspiration_4.b558f7dd.jpg",
+    "static/media/index_inspiration_5.efce5470.jpg": "./static/media/index_inspiration_5.efce5470.jpg",
+    "static/media/index_inspiration_6.e5a6c13b.jpg": "./static/media/index_inspiration_6.e5a6c13b.jpg",
+    "static/media/map-pin.4157f966.svg": "./static/media/map-pin.4157f966.svg",
+    "static/media/map.6753fba0.svg": "./static/media/map.6753fba0.svg",
+    "static/media/tip-backpack.f607b022.svg": "./static/media/tip-backpack.f607b022.svg",
+    "static/media/tip-bike.b72ca50e.svg": "./static/media/tip-bike.b72ca50e.svg",
+    "static/media/tip-plan.54863661.svg": "./static/media/tip-plan.54863661.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bde30c42.js",
+    "static/css/2.cb28b092.chunk.css",
+    "static/js/2.cc49024e.chunk.js",
+    "static/css/main.6b42416a.chunk.css",
+    "static/js/main.347721fa.chunk.js"
+  ]
+}
