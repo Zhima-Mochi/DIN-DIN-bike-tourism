@@ -1,6 +1,6 @@
 # DIN DIN Bike Tourism
-[THE F2E 3rd - Week 2 - Work](https://2021.thef2e.com/news/week2)
-**UI Designer : Lola Lin**
+[THE F2E 3rd - Week 2 - Work](https://2021.thef2e.com/news/week2)  
+**UI Designer : Lola Lin**  
 [UI source](https://www.figma.com/file/p1UfS4SUxqY19obZzMpcEp/Week2---%E8%87%AA%E8%A1%8C%E8%BB%8A%E5%9C%B0%E5%9C%96%E8%B3%87%E8%A8%8A%E6%95%B4%E5%90%88%E7%B6%B2)
 
 > Tool keywords: react, leaflet, tailwind, scss, docker, openstreetmap-api
