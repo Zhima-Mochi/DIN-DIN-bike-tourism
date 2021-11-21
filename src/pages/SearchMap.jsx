@@ -69,7 +69,7 @@ export default function SearchMap() {
                     })}
                 </div>
             </div>
-            <div className="sm:hidden mt-3">
+            <div className="sm:hidden mt-6">
                 <div className="relative search-map-map">
                     {lane["Geometry"] && <RouteMap seeToggle={false} geometry={lane["Geometry"]} distance={lane["CyclingLength"]} />}
                 </div>
