@@ -7,10 +7,10 @@ import RouteMap from "../components/RouteMap";
 import city_shape_options from "../constants/city_shape";
 import distance from '../assets/icon/distance.svg'
 
-function RouteSelecton({ lane, data,clickHandle }) {
+function RouteSelecton({ lane, data, clickHandle }) {
     return (
-        <div className={` list-item w-full h-28 ${lane["RouteName"] === data["RouteName"] ? "bg-gray-200" : "bg-white"}`} 
-        onClick={()=>clickHandle(data)}>
+        <div className={` list-item w-full h-28 ${lane["RouteName"] === data["RouteName"] ? "bg-gray-200" : "bg-white"}`}
+            onClick={() => clickHandle(data)}>
             <span className="city">{data.City}</span><br />
             <p className="route-name mb-8">{data.RouteName}</p>
             <span className="distance"> 距離 {data.CyclingLength / 1000} km</span>
@@ -69,7 +69,11 @@ export default function SearchMap() {
                     })}
                 </div>
             </div>
-
+            <div className="sm:hidden mt-3">
+                <div className="relative search-map-map">
+                    {lane["Geometry"] && <RouteMap seeToggle={false} geometry={lane["Geometry"]} distance={lane["CyclingLength"]} />}
+                </div>
+            </div>
         </div>
     </>);
 }
