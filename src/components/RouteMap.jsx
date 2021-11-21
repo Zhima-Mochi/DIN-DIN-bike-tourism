@@ -65,7 +65,11 @@ export default function RouteMap({ geometry, distance, seeToggle = true }) {
 
     const corners = getCorners(geometry);
     // center is center of geometry center and start position
-    const center = getCenter([getCenter(corners), geometry[0]]);
+    // const center = getCenter([getCenter(corners), geometry[0]]);
+    
+    // use start point as center
+    const center = geometry[0];
+
     // const diameter = getDiameter(corners);
     const zoom = (
         distance <= 500 ? 16 :
