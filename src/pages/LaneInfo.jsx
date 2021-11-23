@@ -22,7 +22,7 @@ export default function LaneInfo() {
     return (<>
         <Header bg_color="white" logo_color="color" />
         <div className="h-20 lg:h-28"></div>
-        <div className="view-border">
+        <div className="view-border pb-20 ">
             <p className="page-title">
                 <Link to="/">首頁</Link><span className='mx-1'>/</span>
                 <Link to="/search_map">探索地圖</Link><span className='mx-1'>/</span>

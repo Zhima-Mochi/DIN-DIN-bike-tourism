@@ -48,7 +48,6 @@ export default function App() {
 
   return (
     // min-h-screen: min-height:100vh
-    // flex flex-col
     <UserLocation.Provider value={position}>
       <AllShapeDataContext.Provider value={allShapeData}>
         <div className='min-h-screen' >
