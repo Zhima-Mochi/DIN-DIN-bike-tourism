@@ -44,8 +44,8 @@ export default function BikeMap(children) {
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <BikePosition mode={mode} location={[userLocation[1], userLocation[0]]} />
-                <Marker position={[userLocation[1], userLocation[0]]} icon={map_pin_icon}>
+                <BikePosition mode={mode} location={center} />
+                <Marker position={center} icon={map_pin_icon}>
                     <Popup>
                         你在這裡
                     </Popup>

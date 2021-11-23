@@ -62,7 +62,7 @@ export default function BikePosition({ location, mode = "borrow" }) {
         getStationNearByData(location[1], location[0], 1000)
             .then(res => getAvailableData(location[1], location[0], res, 1000))
             .then(res => setBikes(res))
-    }, [])
+    }, [location])
 
     return (
         <>
