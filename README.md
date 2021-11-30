@@ -30,7 +30,7 @@ REACT_APP_API_KEY=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF
 ### Run
 
 ```sh
-$ npm start : .env
+$ npm run start : .env
 ```
 Now, have fun with http://localhost:3000/.
 
