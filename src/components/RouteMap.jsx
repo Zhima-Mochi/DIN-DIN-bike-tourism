@@ -66,7 +66,7 @@ export default function RouteMap({ geometry, distance, seeToggle = true }) {
     const corners = getCorners(geometry);
     // center is center of geometry center and start position
     // const center = getCenter([getCenter(corners), geometry[0]]);
-    
+
     // use start point as center
     const center = geometry[0];
 
@@ -94,7 +94,7 @@ export default function RouteMap({ geometry, distance, seeToggle = true }) {
     return (
         <>
             {seeToggle && <BorrowReturnToggle isToggleOn={mode === 'return'} handleClick={handleClick} />}
-            <MapContainer center={[25.0210905, 121.5353809]} zoom={15} scrollWheelZoom={false} whenCreated={setMap}>
+            <MapContainer tap={false} center={[25.0210905, 121.5353809]} zoom={15} scrollWheelZoom={false} whenCreated={setMap}>
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
