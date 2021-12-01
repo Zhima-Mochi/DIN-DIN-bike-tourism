@@ -39,11 +39,7 @@ export default function BikeMap(children) {
     return (
         <>
             <BorrowReturnToggle isToggleOn={mode === 'return'} handleClick={handleClick} />
-<<<<<<< HEAD
             <MapContainer tap={false} center={[25.0210905, 121.5353809]} zoom={16} scrollWheelZoom={false} whenCreated={setBikeMap}>
-=======
-            <MapContainer center={[25.0210905, 121.5353809]} zoom={16} scrollWheelZoom={false} whenCreated={setBikeMap}>
->>>>>>> 4653280f2fdff0c435c38c2591aeca0037820edb
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
