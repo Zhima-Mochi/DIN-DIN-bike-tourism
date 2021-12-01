@@ -12,9 +12,11 @@ function RouteSelecton({ lane, data, clickHandle }) {
         <div className={` list-item w-full h-28 ${lane["RouteName"] === data["RouteName"] ? "bg-gray-200" : "bg-white"}`}
             onClick={() => clickHandle(data)}>
             <span className="city">{data.City}</span><br />
-            <p className="route-name mb-8">{data.RouteName}</p>
-            <span className="distance"> 距離 {data.CyclingLength ? data.CyclingLength / 1000 : '?'} km</span>
-            <Link to={`/lane_info/${data.RouteName}`}><span className="float-right mr-2 more">查看更多</span></Link>
+            <p className="route-name mb-7">{data.RouteName}</p>
+            <p className="distance">
+                距離 {data.CyclingLength ? data.CyclingLength / 1000 : '?'} km
+                <Link to={`/lane_info/${data.RouteName}`}><span className="float-right mr-2 more">查看更多</span></Link>
+            </p>
         </div>
     )
 }
@@ -40,12 +42,12 @@ export default function SearchMap() {
     return (<>
         <Header bg_color="white" logo_color="color" />
         <div className="bg-gray-100 h-20 lg:h-28"></div>
-        <div className="bg-gray-100 view-border">
+        <div className="bg-gray-100 view-border pb-20">
             <p className="page-title">
                 <Link to="/">首頁</Link><span className='mx-1'>/</span>
                 <Link to="/search_map">探索地圖</Link>
             </p>
-            <div className="search-map-block grid grid-cols-1 sm:grid-cols-12">
+            <div className="grid grid-cols-1 sm:grid-cols-12">
                 <div className="hidden sm:block col-span-9">
                 </div>
                 <div className=" col-span-1 mx-1 my-2 sm:col-span-3">
@@ -58,6 +60,8 @@ export default function SearchMap() {
                         }
                     </select>
                 </div>
+            </div>
+            <div className="search-map-block grid grid-cols-1 sm:grid-cols-12">
                 <div className="hidden sm:block col-span-9">
                     <div className="relative search-map-map">
                         {lane["Geometry"] && <RouteMap seeToggle={false} geometry={lane["Geometry"]} distance={lane["CyclingLength"]} />}
@@ -69,7 +73,7 @@ export default function SearchMap() {
                     })}
                 </div>
             </div>
-            <div className="sm:hidden mt-6">
+            <div className="sm:hidden mt-20">
                 <div className="relative search-map-map">
                     {lane["Geometry"] && <RouteMap seeToggle={false} geometry={lane["Geometry"]} distance={lane["CyclingLength"]} />}
                 </div>

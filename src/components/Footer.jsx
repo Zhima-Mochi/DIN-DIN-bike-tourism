@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div className="footer-bg mt-32 flex justify-center items-center flex-col lg:flex-row">
+        <div className="footer-bg flex justify-center items-center flex-col lg:flex-row">
             <div className="footer-copyright flex-none">
                 Copyright © 2021 &nbsp;
             </div>

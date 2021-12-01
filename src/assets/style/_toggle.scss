@@ -42,15 +42,11 @@
 
     &.borrow {
         background-color: $orange;
-        content: url('../icon/bike.svg');
-
     }
 
     &.return {
         background-color: $black;
-        content: url('../icon/bike_orange.svg');
         margin-left: 80px;
-
         @include lg-width {
             margin-left: 105px;
         }

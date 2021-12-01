@@ -24,11 +24,11 @@ function Route({ data, ind }) {
     return (
         <Link to={`/lane_info/${data.RouteName}`}>
             <div className=" recommend-route-box">
-                <div className="grid grid-cols-2 ">
-                    <div className="col-span-1 mr-4 ">
+                <div className="grid grid-cols-11 ">
+                    <div className="col-span-5 ">
                         <img className="recommend-route-img" src={inspiration_image[ind]} />
                     </div>
-                    <div className="col-span-1 recommend-route-content ">
+                    <div className="col-span-6 recommend-route-content ">
                         <p className="city mb-1">{data.City}</p>
                         <p className="route-name mb-1">{data.RouteName}</p>
                         <img src={distance} className="distance-icon mr-1" />

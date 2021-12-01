@@ -14,7 +14,7 @@ export default function NearBy() {
             <p className="page-title">
                 <Link to="/">首頁</Link><span className='mx-1'>/</span>
                 <Link to="/nearby">尋找單車</Link><span className='mx-1'>/</span>
-                尋找附近的Ubike
+                尋找附近的自行車
             </p>
             <div className="relative near-bike-map mt-12 mx-auto mb-28">
                 {<BikeMap />}

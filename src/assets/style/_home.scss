@@ -48,12 +48,13 @@ $searchsize-ratio: 0.9;
         border: 1px solid $gray;
         height: 35px*$searchsize-ratio;
         color: $black;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 20px*$searchsize-ratio;
         line-height: 36px*$searchsize-ratio;
         letter-spacing: 0.1em*$searchsize-ratio;
         padding-left: 72px*$searchsize-ratio;
-
+        -webkit-appearance: textfield;
+        background-color: white;
         @include lg-width {
             line-height: 48px*$searchsize-ratio;
             height: 56px*$searchsize-ratio;

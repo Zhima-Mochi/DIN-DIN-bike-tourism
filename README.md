@@ -30,7 +30,7 @@ REACT_APP_API_KEY=FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF
 ### Run
 
 ```sh
-$ npm start : .env
+$ npm run start : .env
 ```
 Now, have fun with http://localhost:3000/.
 
@@ -39,4 +39,5 @@ Now, have fun with http://localhost:3000/.
 + [github page](https://zhima-mochi.github.io/DIN-DIN-bike-tourism/#/)
 + [virtual machine](http://108.61.187.106:8087/#/)
 
-![img](./DEMO.JPG)
+<img src="./DEMO1.JPG" alt="img" width="1200"/>
+<img src="./DEMO2.JPG" alt="img" width="390"/>

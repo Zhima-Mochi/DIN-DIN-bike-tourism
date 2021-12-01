@@ -27,6 +27,11 @@ $black: #1F1E1D;
         background-color: $green;
     }
 
+    &.pin {
+        filter: invert(12%) sepia(81%) saturate(7325%) hue-rotate(5deg) brightness(104%) contrast(116%);
+        box-shadow: none;
+    }
+
 }
 
 .near-bike-map {
