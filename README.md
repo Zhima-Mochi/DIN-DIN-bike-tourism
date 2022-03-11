@@ -37,7 +37,6 @@ Now, have fun with http://localhost:3000/.
 ## Demo
 
 + [github page](https://zhima-mochi.github.io/DIN-DIN-bike-tourism/#/)
-+ [virtual machine](http://108.61.187.106:8087/#/)
 
 <img src="./DEMO1.JPG" alt="img" width="1200"/>
 <img src="./DEMO2.JPG" alt="img" width="390"/>
